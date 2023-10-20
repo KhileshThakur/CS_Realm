@@ -1,0 +1,120 @@
+.mainBody {
+    width: 100%;
+    display: inline-flex;
+    height: 100vh;
+}
+.menuDiv {
+    width: 10%;
+    background: #000;
+}
+ul.menu {
+    margin: 50px 30px;
+    width: auto;
+}
+li {
+    margin: 50px 0px;
+    width: auto;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+i.fa{
+    font-size: 40px;
+    text-align: center;
+    color: #14ADE8;
+    transition: font-size 0.2s ease-in;
+   
+}
+i.fa:hover {
+    font-size: 42px;
+    color: #c3f0ff;
+}
+.rightDiv {
+    background: linear-gradient(360deg, #919191, transparent);
+}
+h1 {
+    margin: 50px 100px 50px;
+    text-decoration: overline;
+    font-size: xxx-large;
+    color: #141444;
+    width: auto;
+}
+ul.menuGo {
+    margin: 100px;
+    width: 50%;
+}
+label {
+    font-size: 20px;
+    font-weight: 400;
+}
+button {
+    margin: 15px 0px;
+    outline: none;
+    width: 28%;
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 17px;
+    border-radius: 5px;
+    border: 1px solid green;
+    color: #000;
+    font-weight: bold;
+    background: #9eb2ff;
+    box-shadow: 3px 3px #14ADE8;
+}
+button a{
+    text-decoration: none;
+    color: #190d3e;
+}
+button:hover{
+    box-shadow: -3px -3px #14ADE8;
+}
+form {
+    margin: 30px 0px 0px 100px;
+    width: auto;
+}
+.rightDiv h3 {
+    margin: 0 0 0 100px;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    width: auto;
+}
+.rightDiv input {
+    width: 40%;
+    display: block;
+    margin: 10px 0px;
+    outline: none;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 1px 0px #000;
+    letter-spacing: 1px;
+}
+
+input[type="submit"] {
+    margin: 30px 0px;
+    width: 20%;
+    outline: none;
+    border: 1px solid green;
+    font-size: 18px;
+    border-radius: 5px;
+    background: #9eb2ff;
+    box-shadow: 2px 2px #14ade8;
+}
+
+input[type="submit"]:hover {
+    background: #5cd75c;
+}
+
+h4 {
+    margin: 0px 0px 0px 100px;
+    width: fit-content;
+    padding: 5px 5px 5px 0px;
+    font-size: 16px;
+}
+.right-left{
+    display: inline;
+}

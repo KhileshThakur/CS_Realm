@@ -1,0 +1,128 @@
+*{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: flex;
+}
+.leftContainer {
+    background: linear-gradient(360deg, #919191, transparent);
+    height: 100vh;
+    width: 340%;
+}
+
+.leftContainer h3 {
+    text-align: center;
+    margin: 85px 0px;
+    font-size: 35px;
+    text-decoration: underline;
+    padding: 4px 0px;
+    letter-spacing: 1px;
+    color: #141444;
+    background: linear-gradient(45deg, transparent, transparent, #84bcc9,transparent, transparent);
+}
+
+.leftContainer ul {
+    display: flex;
+    justify-content: space-between;
+    /* margin: 91px; */
+    text-align: center;
+}
+.leftContainer li {
+    /* text-decoration: none; */
+    list-style: none;
+    margin: 80px 0px;
+}
+
+.leftContainer a {
+    text-decoration: none;
+    font-size: 20px;
+    border: 1px solid #000;
+    padding: 10px;
+    color: #000;
+    font-weight: 600;
+    background: #81c1e1;
+    box-shadow: 1px 1px 1px;
+}
+
+.leftContainer a:hover{
+    background: #5cd75c;
+}
+
+.menuContainer {
+    display: block;
+    background: #000;
+}
+
+.menuContainer h3 {
+    margin: 50px auto;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    word-spacing: 3px;
+    padding: 15px 0px 50px;
+    border-bottom: 1px solid gray;
+}
+.menuContainer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menuContainer li {
+    list-style: none;
+    text-align: center;
+    margin: 65px;
+    width: auto;
+    padding: 10px;
+    border-bottom: 1px dashed gray;
+    transition: font-size easy 0.3s;
+}
+.menuContainer li :hover{
+    font-size: 19px;
+    color: #14ADE8;
+}
+span{
+    color: #14ADE8;
+}
+.name h2 {
+    text-align: start;
+    font-size: 22px;
+    margin-bottom: 21px;
+    padding-left: 45px;
+    width: 93%;
+}
+.others li {
+    margin: 21px 0px;
+    width: 100%;
+    text-align: start;
+    padding: 0 0 0 45px;
+    font-size: 17px;
+    -webkit-text-stroke-width: thin;
+}
+button.show {
+    width: 60%;
+    padding: 2px 0px;
+    outline: none;
+    background: #a1a18c;
+    outline: none;
+    border: 1px solid;
+    border-radius: 3px;
+    box-shadow: 1px 1px;
+}
+.profile {
+    width: 60%;
+    margin: 0px auto;
+    text-align: center;
+    padding: 28px 0px;
+    box-shadow: 4px 4px 2px gray;
+    border: 2px solid gray;
+    background: linear-gradient(45deg, #92bcd1, transparent);
+}
+.hidden {
+    visibility: hidden;
+    color: red;
+    font-size: 18px;
+    padding: 0 0 0 6px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LBMS-Records</title>
+    link(rel='stylesheet' href='../static/css/records.css')
+    link(rel='preconnect' href='https://fonts.googleapis.com')
+    link(rel='preconnect' href='https://fonts.gstatic.com', crossorigin)
+    link(href='https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap' rel='stylesheet')
+    <script src="https://kit.fontawesome.com/a51b61aa2c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="nav">
+        <a title="Dashboard" href="/client/dashboard"><i class="fa fa-regular fa-square-caret-left"></i></a>
+        
+    </div>
+    <h1>Available Books</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Book ID</th>
+                <th>Book Name</th>
+                <th>Author</th>
+                <th>Available</th>
+            </tr>
+        </thead>
+        <tbody>
+            each book in bookrec
+                tr
+                    td= book.book_id
+                    td= book.book_name
+                    td= book.author
+                    - const check = book.available_status
+                    td
+                        if book.available_status
+                            p Yes
+                        else
+                            p No
+                    
+            
+        </tbody>
+    </table>
+</body>
+<script src="../static/javascript/bookrec.js"></script>
+
+</html>

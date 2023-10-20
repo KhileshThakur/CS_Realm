@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LBMS-Records</title>
+    link(rel='stylesheet' href='../static/css/records.css')
+    link(rel='preconnect' href='https://fonts.googleapis.com')
+    link(rel='preconnect' href='https://fonts.gstatic.com', crossorigin)
+    link(href='https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap' rel='stylesheet')
+    <script src="https://kit.fontawesome.com/a51b61aa2c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <a title="Dashboard" href="/dashboard"><i class="fa fa-regular fa-square-caret-left"></i></a>
+    <h1>Rented Books Record</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Book ID</th>
+                <th>Book Name</th>
+                <th>Author</th>
+                <th>Available</th>
+                <th>Student ID</th>
+                <th>Student Name</th>
+                <th>Return</th>
+            </tr>
+        </thead>
+        <tbody>
+            each rentRec in rentRecs
+                tr
+                    td= rentRec.book_id
+                    td= rentRec.book_name
+                    td= rentRec.author
+                    - const check = rentRec.available_status
+                    td
+                        if rentRec.available_status
+                            p Yes
+                        else
+                            p No
+                    td= rentRec.stud_id 
+                    td= rentRec.stud_name
+                    <td><button class="return"><a href="/bookReturn/#{rentRec._id}" onclick="return confirm('Do you want to return book ?'), alert('Please Update Available Status of Book')">Return</a></button></td>
+                   
+
+            
+        </tbody>
+    </table>
+</body>
+
+</html>

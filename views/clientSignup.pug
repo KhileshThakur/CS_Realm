@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LBMS-Sign Up</title>
+
+    link(rel='stylesheet', href='../static/css/all.css')
+    link(rel='stylesheet', href='../static/css/adminSection.css')
+    link(rel='preconnect', href='https://fonts.googleapis.com')
+    link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin)
+    link(href='https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap', rel='stylesheet')
+    <script src="https://kit.fontawesome.com/a51b61aa2c.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="mainBody">
+        <div class="menuDiv">
+            <ul class="menu">
+                <li><a title="Back" href="/client"><i class="fa fa-solid fa-circle-left"></i></a></li>
+                <li><a title="Rules" href="/rules"><i class="fa fa-regular fa-file-lines"></i></a></li>
+                <li><a title="About" href="/about"><i class="fa fa-light fa-circle-info"></i></a></li>
+                <li><a title="Contact" href="/contact"><i class="fa fa-solid fa-phone-volume"></i></a></li>
+                <li><a title="Go to Student Login" href="/client/login"><i class="fa fa-regular fa-user"></i></a></li>
+
+            </ul>
+
+        </div>
+        <div class="rightDiv">
+            <h1>Student</h1>
+            <h3>Create Student Account</h3>
+            <form action="/client/signup" method="post" autocomplete="off">
+                
+                <input type="number" name="stud_id" id="stud_id" placeholder="Enter Student ID">
+                <input type="text" name="stud_name" id="stud_name" placeholder="Enter Full Name">
+                <input type="email" name="email" id="email" placeholder="Enter Email">
+                <input type="text" id="dob" name="dob" pattern="\d{4}-\d{2}-\d{2}" placeholder="YYYY-MM-DD" title="Enter Date of Birth">
+                <input type="text" name="mobile" id="mobile" placeholder="Enter Mobile No." pattern="[1-9]{1}[0-9]{9}">
+                <input type="text" name="address" id="address" placeholder="Enter address">
+                <input type="text" name="username" id="username" placeholder="Enter Username">
+                <input type="password" name="password" id="password" placeholder="Enter Password">
+                <input type="submit" value="Create Account">
+            </form>
+            
+        </div>
+        
+    </div>
+
+
+
+
+    
+   
+
+</body>
+
+</html>

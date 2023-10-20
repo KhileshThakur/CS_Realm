@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LBMS-Records</title>
+    link(rel='stylesheet' href='../static/css/records.css')
+    link(rel='preconnect' href='https://fonts.googleapis.com')
+    link(rel='preconnect' href='https://fonts.gstatic.com', crossorigin)
+    link(href='https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap' rel='stylesheet')
+    <script src="https://kit.fontawesome.com/a51b61aa2c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <a title="Dashboard" href="/dashboard"><i class="fa fa-regular fa-square-caret-left"></i></a>
+
+    <h1>Students Record</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Student ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Mobile No.</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            each stud in stdrec
+                <tr>
+                    td= stud.stud_id
+                    td= stud.stud_name
+                    td= stud.email 
+                    td= stud.mobile
+                </tr>
+
+        </tbody>
+    </table>
+
+</body>
+
+
+</html>

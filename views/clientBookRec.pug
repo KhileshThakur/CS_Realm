@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LBMS-Records</title>
+    link(rel='stylesheet' href='../static/css/records.css')
+    link(rel='preconnect' href='https://fonts.googleapis.com')
+    link(rel='preconnect' href='https://fonts.gstatic.com', crossorigin)
+    link(href='https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap' rel='stylesheet')
+    <script src="https://kit.fontawesome.com/a51b61aa2c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <a title ="Dashboard" href="/client/dashboard"><i class="fa fa-regular fa-square-caret-left"></i></a>
+    <h1>Your Books</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Book ID</th>
+                <th>Book Name</th>
+                <th>Author</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            each rentRec in book
+                if rentRec.stud_id == client.stud_id
+                    tr
+                        td= rentRec.book_id
+                        td= rentRec.book_name
+                        td= rentRec.author
+                        
+        </tbody>
+    </table>
+</body>
+
+</html>

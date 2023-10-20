@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LBMS-Records</title>
+    link(rel='stylesheet' href='../static/css/records.css')
+    link(rel='preconnect' href='https://fonts.googleapis.com')
+    link(rel='preconnect' href='https://fonts.gstatic.com', crossorigin)
+    link(href='https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap' rel='stylesheet')
+    <script src="https://kit.fontawesome.com/a51b61aa2c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="nav">
+        <a title="Dashboard" href="/dashboard"><i class="fa fa-regular fa-square-caret-left"></i></a>
+        <a title="Insert a Book" href="/bookInsert"><i class="fa fa-solid fa-book"></i></a>
+    </div>
+    <h1>Books Record</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Book ID</th>
+                <th>Book Name</th>
+                <th>Author</th>
+                <th>Available</th>
+                <th>Reserve</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            each book in bookrec
+                tr
+                    td= book.book_id
+                    td= book.book_name
+                    td= book.author
+                    - const check = book.available_status
+                    td
+                        if book.available_status
+                            p Yes
+                        else
+                            p No
+                    td
+                        if book.available_status == true 
+                            <button class="rent"><a href="/bookRent/#{book._id}">Rent</a></button> 
+                        else 
+                            p -
+                    <td><button class="update"><a href="/bookUpdate/#{book._id}">Update</a></button></td>
+                    <td><button class="delete"><a href="/bookDelete/#{book._id}" onclick="return confirm('Are you sure you want to delete this record?')">Delete</a></button></td>
+
+            
+            
+        </tbody>
+    </table>
+</body>
+<script src="../static/javascript/bookrec.js"></script>
+
+</html>

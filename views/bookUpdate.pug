@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Book</title>
+    link(rel='stylesheet' href='../static/css/book.css')
+    link(rel='preconnect' href='https://fonts.googleapis.com')
+    link(rel='preconnect' href='https://fonts.gstatic.com', crossorigin)
+    link(href='https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap' rel='stylesheet')
+    <script src="https://kit.fontawesome.com/a51b61aa2c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Update Book Details</h1>
+    <form action="/bookUpdate/#{book._id}" method="post" autocomplete="off" class="book-form">
+        <label for="book_id">Book ID</label>
+        <input type="number" name="book_id" id="" placeholder="Enter Book ID" value="#{book.book_id}"><br>
+        <label for="book_name">Book Name</label>
+        <input type="text" name="book_name" id="" placeholder="Enter Book Name" value="#{book.book_name}"><br>
+        <label for="author">Author</label>
+        <input type="text" name="author" id="" placeholder="Enter Author's Name" value="#{book.author}"><br>
+        <label for="available_status">Available Status</label>
+            if book.available_status == true
+                <div class="ava">
+                    <input type="radio" name="available_status" checked id="" value="true">Yes
+                    <input type="radio" name="available_status" id="" value="false">No
+                </div>
+            else
+                <div class="ava">
+                    <input type="radio" name="available_status" id="" value="true">Yes
+                    <input type="radio" name="available_status" checked id="" value="false">No
+                </div>
+            <br>
+        
+        <div class="buttons">
+            <input type="submit" value="Update">
+            <button class="submit"><a href="/bookrec">View Books</a></button>
+        </div>
+
+    </form>
+   
+
+</body>
+</html>

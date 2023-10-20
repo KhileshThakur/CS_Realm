@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LBMS-Log In</title>
+    link(rel='stylesheet', href='../static/css/all.css')
+    link(rel='stylesheet', href='../static/css/adminSection.css')
+    link(rel='preconnect', href='https://fonts.googleapis.com')
+    link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin)
+    link(href='https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap', rel='stylesheet')
+    <script src="https://kit.fontawesome.com/a51b61aa2c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+
+    <div class="mainBody">
+        <div class="menuDiv">
+            <ul class="menu">
+                <li><a title="Back" href="/admin"><i class="fa fa-solid fa-circle-left"></i></a></li>
+                <li><a title="Rules" href="/rules"><i class="fa fa-regular fa-file-lines"></i></a></li>
+                <li><a title="About" href="/about"><i class="fa fa-light fa-circle-info"></i></a></li>
+                <li><a title="Contact" href="/contact"><i class="fa fa-solid fa-phone-volume"></i></a></li>
+                <li><a title="Go to Create Account" href="/signup"><i class="fa fa-regular fa-user"></i></a></li>
+
+            </ul>
+
+        </div>
+        <div class="rightDiv">
+            <h1>ADMIN</h1>
+            <h3>Log into Admin Account</h3>
+            <form action="/login" method="post" autocomplete="off">
+                <input type="text" name="username" id="username" placeholder="Enter Username">
+                <input type="password" name="password" id="password" placeholder="Enter Password">
+                <input type="submit" value="Log In">
+            </form>
+            <h4>Haven't Registered?<br><a href="/signup">Create Admin Account</a></h4>
+        </div>
+        
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+h1 {
+    text-align: center;
+    font-size: 36px;
+    padding: 10px;
+    background: linear-gradient(45deg,transparent, transparent, #69c4e7, transparent,transparent);
+}
+form {
+    width: 800px;
+    padding: 20px;
+    display: grid;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border: 1px solid #000;
+    box-shadow: 2px 2px 2px gray;
+    background: linear-gradient(203deg, transparent, #cdcbf1);
+}
+
+input {
+    margin: 10px 0px;
+    width: 300px;
+    outline: none;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 1px 0px #000;
+    letter-spacing: 1px;
+}
+label {
+    font-size: 18px;
+    font-weight: 900;
+}
+input[type="radio"] {
+    width: 45px;
+    border: none;
+    box-shadow: 0px 0px 0px;
+}
+input[type="submit"] {
+    margin: 30px 20px;
+    width: 35%;
+    outline: none;
+    border: 1px solid green;
+    font-size: 18px;
+    border-radius: 5px;
+    background: #9eb2ff;
+    box-shadow: 2px 2px #14ade8;
+}
+.submit {
+    margin: 30px 20px;
+    width: 35%;
+    outline: none;
+    border: 1px solid green;
+    font-size: 18px;
+    padding: 5px;
+    border-radius: 5px;
+    background: #9eb2ff;
+    box-shadow: 2px 2px #14ade8;
+    
+}
+.submit a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 16px;
+}
+.ava {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="submit"]:hover {
+    background: #5cd75c;
+}
+.submit:hover{
+    background: #5cd75c;
+}
+

@@ -1,0 +1,80 @@
+
+
+.mainBody{
+    background: url('../images/mainBackground.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    width: 100%;
+    display: inline-flex;
+}
+.leftDiv {
+    width: 270%;
+    height: 100vh;
+}
+.rightDiv {
+    background: #000000;
+    height: 100vh;
+}
+.logo {
+    width: 50%;
+    margin: 0 auto 50px;
+    border-bottom: 1px solid gray;
+    box-shadow: 0px -1px 0px 0px gray;
+}
+.menu {
+    width: auto;
+    margin: 20px auto 40px;
+    padding: 20px;
+}
+li {
+    margin: 20px auto 20px;
+    padding: 10px;
+    width: 65%;
+    text-align: center;
+    border-bottom: 1px dashed gray;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 200;
+    color: #fff;
+    transition: font-size 0.4s ease, transform 0.3s ease;
+}
+a:hover {
+    font-size: 19px;
+    transform: scale(1);
+    color: #14ADE8;
+}
+
+.leftText {
+    margin: 330px 0px 0px 80px;
+}
+h1 {
+    margin: 10px 0px 10px 0px;
+    padding: 5px 0px 5px 10px;
+    font-size: 45px;
+    width: auto;
+    background: linear-gradient(148deg, #d9c5c5, transparent 65%);
+}
+h1.heading1 {
+    font-weight: bolder;
+    color: #120634;
+    border-left: 4px solid #141444;
+}
+h1.heading2 {
+    color: #141444;
+    font-weight: 400;
+    border-left: 4px solid #141444;
+}
+h3 {
+    margin: 30px 0px;
+}
+h3.heading3 {
+    border-left: 3px solid #580b0b;
+    background: linear-gradient(45deg, #d3cd84, transparent 80%);
+    padding: 2px 15px;
+}
+

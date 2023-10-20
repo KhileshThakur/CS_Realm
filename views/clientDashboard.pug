@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LBMS-Dashboard</title>
+    link(rel='stylesheet', href='../static/css/all.css')
+    link(rel='stylesheet', href='../static/css/dashboard.css')
+    link(rel='preconnect', href='https://fonts.googleapis.com')
+    link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin)
+    link(href='https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap', rel='stylesheet')
+    <script src="https://kit.fontawesome.com/a51b61aa2c.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+    <div class="leftContainer">
+        <h3>Profile</h3>
+        <div class="profile">
+            <div class="name">
+                <h2>#{client.stud_name}</h2>
+            </div>
+            <div class="others">
+                <ul>
+                    <li>Student ID : #{client.stud_id}</li>
+                    <li> Date of Birth:
+                        - let dobDate = new Date(client.dob);
+                                - let month = dobDate.toLocaleString('default', { month: 'short' });
+                                - let day = dobDate.getDate();
+                                - let year = dobDate.getFullYear();
+                                |  #{month} #{day} #{year}
+                    </li>
+                    
+                </ul>
+                <ul>
+                    <li>Email          :  #{client.email}</li>
+                    <li>Phone No.      :  #{client.mobile}</li>
+                </ul>
+                <ul>
+                    <li>Address        :  #{client.address}</li>
+                </ul>
+                <ul>
+                    <li>Username: <span class="hidden" id="username">#{client.username}</span></li>
+                    <li>Password: <span class="hidden" id="password">#{client.password}</span></li>
+                    <li><button id="toggleButton" class="show">Show</button></li>
+                </ul>
+                
+            </div>
+        </div>
+              
+    </div>
+    <div class="menuContainer">
+        <h3>Hello, #{client.stud_name} <br>Welcome to <span>CSREALM</span></h3>
+        <ul>
+            <li><a href="/client/availableBooks">Available Books</a></li>
+            <li><a href="/client/books">Your Books</a></li>
+            <li><a href="/client/logout">Log Out</a></li>
+        </ul>
+
+    </div>
+
+
+
+
+</body>
+<script src="../static/javascript/bookrec.js"></script>
+
+
+</html>
