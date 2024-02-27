@@ -4,7 +4,7 @@ const fs = require('fs');
 const session = require('express-session');
 const app = express();
 const { adminRec, bookRec, studentRec, bookRent } = require("./schema/schemaDB");
-const port = 8080;
+const port = process.env.PORT;
 
 app.use('/static', express.static('static'));//for serving files
 app.use(express.urlencoded({ extended: false }));//its a middleware which will through data to the express and using req.body you can access it in post request
