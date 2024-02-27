@@ -4,6 +4,7 @@
   "description": "This system is made for the library manager who can see the record of books available in library and maintain those books data also manager can have record of student who bought books from library",
   "main": "app.js",
   "scripts": {
+    "start" : "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Khilesh Thakur",
