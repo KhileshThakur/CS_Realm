@@ -1,0 +1,22 @@
+{
+  "name": "librarymanagementsystem",
+  "version": "1.0.0",
+  "description": "This system is made for the library manager who can see the record of books available in library and maintain those books data also manager can have record of student who bought books from library",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Khilesh Thakur",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "mongoose": "^7.4.3",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
