@@ -1,7 +1,7 @@
 const mongoose = require("mongoose")
 const { boolean } = require("webidl-conversions")
 
-mongoose.connect('mongodb://127.0.0.1:27017/lbmsDB')
+mongoose.connect('mongodb+srv://omthakur6640:Om25MongoDB@cluster0.ufgbeas.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
     .then(() => {
         console.log("MongDB Connected Successfully")
     })
